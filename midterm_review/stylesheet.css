@@ -50,12 +50,13 @@
   color: #333;
 }
 
-#byline {
+.byline {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   font-style: italic;
   margin-bottom: 16px;
 }
+
 #body-intro {
   margin: 0 auto;
   width: 700px;
