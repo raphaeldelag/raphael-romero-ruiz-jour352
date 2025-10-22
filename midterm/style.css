@@ -1,0 +1,121 @@
+.masthead {
+    background: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+.masthead-logo {
+    max-width: 1400px; /* this is still giving me trouble, can't seem to get this to full bleed sorry :/ */
+    height: auto;
+    display: block;
+    margin: 0 auto -3rem auto;
+}
+.site-title {
+  margin-top: 4rem;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222;
+}
+.masthead-nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.masthead-nav a {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000000;
+  text-decoration: none;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  transition: none;
+}
+.masthead-nav a:hover {
+  text-decoration: underline;
+  background: none;
+}
+.headline {
+  font-family: Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 24px;
+  color: #333;
+}
+.byline {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+.story-image {
+  display: block;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#img-caption {
+  font-size: 15px;
+  color: #555;
+}
+#story-image-vertical {
+  float: right;
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 1rem 1rem;
+  border-radius: 8px;
+  display: block;
+}
+.story-image.full-bleed {
+  display: block;
+  max-width: auto;
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.body-text {
+  margin: 0 auto;
+  width: 700px;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #222;
+  background: #ffffff;
+}
+.source {
+  font-style: italic;
+  color: #888;
+}
+.source.headline {
+  margin-left: 15px;
+  font-style: italic;
+  color: #888;
+}
+.pull-quote {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #ccc;
+  padding-left: 16px;
+  margin: 24px 0;
+}
+.pull-quote cite {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 1rem;
+  color: #888;
+  font-style: normal;
+}
+.source {
+  font-style: italic;
+  color: #888;
+}
