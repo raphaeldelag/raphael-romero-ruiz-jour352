@@ -1,0 +1,29 @@
+/* Google Fonts: Special Elite */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+h1, h2, h3, .navbar-brand, .btn {
+  font-family: 'Special Elite', cursive !important;
+}
+.bi {
+  font-size: 3em;
+}
+.col-md-4, .col-md-6 {
+  text-align: center;
+}
+.row {
+  padding-bottom: 50px;
+}
+img.img-col {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 500px) {
+  h2 {
+    padding-top: 50px;
+  }
+  .btn {
+    background-color: teal !important;
+    border-color: teal !important;
+  }
+}
