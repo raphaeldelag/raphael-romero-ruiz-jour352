@@ -1,0 +1,148 @@
+/* styles for my resume */
+
+/* Base styles: default font and basic spacing for divs, paragraphs, lists */
+body, div, p, ul, li, a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1em;
+  color: #444;
+  font-weight: 400;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+}
+
+/* Container: centers content and constrains max width */
+#container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+/* Name banner: replaces the old H1 */
+#name {
+  font-size: 3em;
+  color: #33485e;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  font-weight: 400;
+  border-bottom: 1px solid #33485e; /* bottom border required */
+  width: 60%;
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.25rem;
+}
+
+/* Title block: replaces strong tag and centers the job title */
+#title {
+  font-weight: 600;   /* title should be bolder */
+  text-align: center;
+  margin: 20px 0 0 0; /* top margin 20px as required */
+  font-size: 1.5em;
+  color: #33485e;
+}
+
+/* Section header: replaces H2 and uses a blue background */
+.sectionheader {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  background-color: #33485e;
+  color: white;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  margin: 20px 0 10px 0; /* top 20px, bottom 10px */
+  font-weight: 400;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Job title: replaces H3 (keeps previous styling) */
+.jobtitle {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 0.75rem;
+}
+
+/* Organization: replaces H4 with a slightly smaller font */
+.organization {
+  font-size: 1.25em; /* set to 1.25em per assignment */
+  font-weight: 400;
+  margin-top: 0.25rem;
+  margin-bottom: 0.1rem;
+}
+
+/* Date: replaces H5 (italicized, small margin top) */
+.date {
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 2px 0 0 0; /* top 2px, others 0 */
+}
+
+/* Description paragraphs: uniform spacing for all descriptions */
+.description {
+  margin: 10px 0; /* top and bottom 10px, others 0 */
+}
+
+/* Top mission block: centered width and bottom margin */
+.top {
+  width: 60%;
+  min-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+/* Contact menu: reset spacing and center text */
+ul.menu {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Menu items: inline display to render horizontally */
+ul.menu li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+/* Menu links styling */
+ul.menu li a {
+  color: #33485e;
+  text-decoration: none;
+  padding: 0.1rem 0.25rem;
+}
+
+/* Education list: top margin only */
+#degrees {
+  margin: 5px 0 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Skills list: top margin only */
+#do {
+  margin: 5px 0 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* General list reset */
+ul {
+  padding-left: 0;
+}
+
+/* make skill labels bold */
+.skill-label {
+  font-weight: 600;
+  /* optional spacing between label and text */
+  margin-right: 0.35rem;
+}
+
+/* Small screen adjustments */
+@media (max-width: 480px) {
+  #name { font-size: 2.2em; width: 80%; }
+  #title, .jobtitle, .organization { font-size: 1.2em; }
+  .sectionheader { width: auto; display: block; padding: 0.25rem; }
+  .top { width: 80%; }
+}

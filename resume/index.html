@@ -1,56 +1,83 @@
 <!doctype html>
-
 <html lang="en">
 <head>
-    
-    <title>Raphael Romero Ruiz's Resume</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raphael Romero Ruiz Resume</title>
 
+  <!-- Google Font: Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet for resume -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<!-- i built this myself -->
-<h1 style="color:blue;font-size: 36px">Raphael Romero Ruiz</h1>
- <strong>Immigration Reporter</strong><br>
- 
-    <img src="raphas_headshot.jpg" width="300px">
- 
-<ul>
-    <li>rromeror@umd.edu</li>
-    <li><a href="https://www.linkedin.com/in/raphaelromeroruiz/">LinkedIn</a></li>
-    <li><a href="https://x.com/raphaeldelag">X</a></li>
-    <li><a href="https://github.com/raphaeldelag/">GitHub</a></li>
+  <!-- page container: centers content and constrains width -->
+  <div id="container">
 
-<p>I'm a journalist who believes everyone's story deserves to be heard — especially those often left out of the headlines. I combine curiosity, empathy, and thorough reporting to shine a light on underrepresented voices and bring depth to complex issues.</p>
+    <!-- name banner -->
+    <div id="name">Raphael Romero Ruiz</div>
 
-  </ul>
-    <h2>Experience:</h2>
-        <h3>Border Reporter</h3>
-            <h4>The Arizona Republic/La Voz Arizona</h4>
-            <h5>April 2024- July 2025</h5>
-                <p>As a border reporter, I wrote about the dynamic environment that is the U.S. southern border providing readers an update on federal policy changes, news on multiple agencies from the Department of Homeland Security and documented how everyday people's lives were being affected by our decisionmakers in Washington D.C. During my time on this beat, I wrote about the increasing American military build-up at the southern border and the evolving authorities given to military personnel for immigration law enforcement. I analyzed monthly migrant apprehension and drug seizure data from the U.S. Customs and Border Protection and maintained a list of government official sources. I frequently traveled across the Arizona borderlands for stories on topics like tribal land sovereignty and local law enforcement.I aided in in developing strategy with reporters across the newsroom to identify coverage needs during the first 100 days of the second Trump administration. I also author a weekly newsletter highlighting key immigration and border related developments and cover the 2024 presidential campaign trail for both Democratic nominee Kamala Harris and Republican nominee Donald Trump.</p>
-        <h3>Engagement Reporter</h3>
-            <h4>The Arizona Republic/La Voz Arizona</h4>
-            <h5>April 2022- April 2024</h5>
-                <p>In this role, I conducted research and gathered data through search analytics, social media, and community outreach to inform my reporting and identify trends of interest to my target audience. I wrote articles appealing to top-of-funnel audiences and created engaging content. I also planned and executed social media strategies for The Arizona Republic and La Voz Arizona, focusing on reaching a younger, Latine audience. I designed visual products to accompany social media content and articles and collaborated with other teams, such as the photography and video teams, to create quality visual content that enhanced storytelling.</p>  
-        <h3>Bilingual Reporter Intern</h3>
-            <h4>The Arizona Republic/La Voz Arizona</h4>
-            <h5>August 2021- April 2022</h5>
-                <p>As a bilingual reporter intern, I developed and executed a comprehensive social media strategy to attract a younger audience to La Voz Arizona's brand via Instagram, which significantly increased followers and engagement. I conducted extensive research and pitched compelling stories that added depth to the coverage of the Latine/x communities in the Phoenix Metro area, resulting in several published articles. I also contributed to the "Faces of Arizona" project and translated stories of interest for Spanish-speaking readers.</p>
-        <h3>Community Desk Intern</h3>
-            <h4>The Arizona Republic/La Voz Arizona</h4>
-            <h5>August 2019- January 2020</h5>
-                <p>During this internship, I helped with Election Day coverage by providing timely updates on polling sites in Tucson. I analyzed the COVID-19 response by the Phoenix City Council, producing in-depth reporting that shed light on the city's efforts to manage the pandemic. I also pitched and developed stories directly related to the Phoenix Metro area, keeping readers informed and engaged with their local community.</p>
-    <h2>Education:</h2>
-        <ul>
-            <li>Bachelor of Arts, Journalism and Mass Communications, Arizona State University, 2023</li>
-            <li>Minor, Transborder Chicana/o and Latina/o Studies, Arizona State University, 2023</li>
-            <li> Minor, Digital Audiences, Arizona State University, 2023</li>
-        </ul>
-    <h2>Skills:</h2>
-         <ul>
-            <li>Journalism. A dedicated reporter with experience in watchdog journalism, local news, and solutions reporting. Skilled in in-depth and narrative storytelling across multiple mediums, with a focus on investigative research and interviewing. Proven ability to cover high-impact topics such as politics, immigration, and community issues.</li>
-            <li>Visual Storytelling. A multimedia professional with expertise in video editing using the Adobe Creative Suite, as well as graphic production. Works with reporters and visual journalists to create news stories and visuals that bring data and information to life using a combination of text, images, and video.</li>
-            <li>Languages. Fluent in Spanish, with a proven ability to translate stories and create content that is culturally relevant and accessible to a broader, Spanish-speaking audience.</li>
-        </ul>
+    <!-- Contact info (menu class) -->
+    <ul class="menu">
+      <li><a href="mailto:rromeror@umd.edu">rromeror@umd.edu</a></li>
+      <li><a href="https://www.linkedin.com/in/raphaelromeroruiz/">LinkedIn</a></li>
+      <li><a href="https://x.com/raphaeldelag">X (Twitter)</a></li>
+      <li><a href="https://github.com/raphaeldelag/">GitHub</a></li>
+    </ul>
+
+    <!-- job title (replaced <strong> with div#title) -->
+    <div id="title">Immigration Reporter</div>
+
+    <!-- PHOTO: commented out per assignment -->
+    <!-- <img src="raphas_headshot.jpg" width="300" alt="Raphael Romero Ruiz headshot"> -->
+
+    <!-- mission / summary (class 'description' on all paragraphs, 'top' on this one) -->
+    <p class="description top">I'm a journalist who believes everyone's story deserves to be heard — especially those often left out of the headlines. I combine curiosity, empathy, and thorough reporting to shine a light on underrepresented voices and bring depth to complex issues.</p>
+
+    <!-- Experience section header -->
+    <div class="sectionheader">Experience</div>
+
+    <!-- Job 1 -->
+    <div class="jobtitle">Border Reporter</div>
+    <div class="organization">The Arizona Republic/La Voz Arizona</div>
+    <div class="date">April 2024 - July 2025</div>
+    <p class="description">As a border reporter, I wrote about the dynamic environment that is the U.S. southern border providing readers an update on federal policy changes, news on multiple agencies from the Department of Homeland Security and documented how everyday people's lives were being affected by our decisionmakers in Washington D.C. During my time on this beat, I wrote about the increasing American military build-up at the southern border and the evolving authorities given to military personnel for immigration law enforcement. I analyzed monthly migrant apprehension and drug seizure data from the U.S. Customs and Border Protection and maintained a list of government official sources. I frequently traveled across the Arizona borderlands for stories on topics like tribal land sovereignty and local law enforcement. I aided in developing strategy with reporters across the newsroom to identify coverage needs during the first 100 days of the second Trump administration. I also authored a weekly newsletter highlighting key immigration and border related developments and covered the 2024 presidential campaign trail.</p>
+
+    <!-- Job 2 -->
+    <div class="jobtitle">Engagement Reporter</div>
+    <div class="organization">The Arizona Republic/La Voz Arizona</div>
+    <div class="date">April 2022 - April 2024</div>
+    <p class="description">In this role, I conducted research and gathered data through search analytics, social media, and community outreach to inform my reporting and identify trends of interest to my target audience. I wrote articles appealing to top-of-funnel audiences and created engaging content. I also planned and executed social media strategies for The Arizona Republic and La Voz Arizona, focusing on reaching a younger, Latine audience. I designed visual products to accompany social media content and articles and collaborated with other teams, such as the photography and video teams, to create quality visual content that enhanced storytelling.</p>
+
+    <!-- Job 3 -->
+    <div class="jobtitle">Bilingual Reporter Intern</div>
+    <div class="organization">The Arizona Republic/La Voz Arizona</div>
+    <div class="date">August 2021 - April 2022</div>
+    <p class="description">As a bilingual reporter intern, I developed and executed a comprehensive social media strategy to attract a younger audience to La Voz Arizona's brand via Instagram, which significantly increased followers and engagement. I conducted extensive research and pitched compelling stories that added depth to the coverage of the Latine/x communities in the Phoenix Metro area, resulting in several published articles. I also contributed to the "Faces of Arizona" project and translated stories of interest for Spanish-speaking readers.</p>
+
+    <!-- Job 4 -->
+    <div class="jobtitle">Community Desk Intern</div>
+    <div class="organization">The Arizona Republic/La Voz Arizona</div>
+    <div class="date">August 2019 - January 2020</div>
+    <p class="description">During this internship, I helped with Election Day coverage by providing timely updates on polling sites in Tucson. I analyzed the COVID-19 response by the Phoenix City Council, producing in-depth reporting that shed light on the city's efforts to manage the pandemic. I also pitched and developed stories directly related to the Phoenix Metro area, keeping readers informed and engaged with their local community.</p>
+
+    <!-- Education section -->
+    <div class="sectionheader">Education</div>
+    <ul id="degrees">
+      <li>Bachelor of Arts, Journalism and Mass Communications, Arizona State University, 2023</li>
+      <li>Minor, Transborder Chicana/o and Latina/o Studies, Arizona State University, 2023</li>
+      <li>Minor, Digital Audiences, Arizona State University, 2023</li>
+    </ul>
+
+    <!-- Skills section -->
+    <div class="sectionheader">Skills</div>
+    <ul id="do">
+        <li><span class="skill-label">Journalism:</span> Experience in watchdog journalism, local news, and solutions reporting. Skilled in in-depth and narrative storytelling across multiple mediums, with a focus on investigative research and interviewing.</li>
+        <li><span class="skill-label">Visual Storytelling:</span> Multimedia skills including video editing (Adobe Creative Suite) and graphic production.</li>
+        <li><span class="skill-label">Languages:</span> Fluent in Spanish; experience translating and creating culturally relevant content for Spanish-speaking audiences.</li>
+    </ul>
+
+  </div> <!-- end #container -->
 </body>
 </html>
