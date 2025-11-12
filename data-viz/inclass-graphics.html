@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Visualization</title>
+    <meta name="description" content="Data visualization graphics">
+    <meta name="author" content="Raphael Romero Ruiz">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <style>
+      body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Data Viz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Graphics</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Data visualization exercise</h1>
+          <p class="lead">Data visualization projects for JOUR 652</p>
+        </div>
+      </div>
+      
+      <!-- Data Visualizations -->
+      <div class="row mt-4">
+        <div class="col-lg-10 offset-lg-1">
+          
+          <!-- Map: Projected extreme heat events -->
+          <div class="mb-5">
+            <iframe title="Projected number of extreme heat events in Maryland for the year 2040" aria-label="Choropleth map" id="datawrapper-chart-VRPgm" src="https://datawrapper.dwcdn.net/VRPgm/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="451" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+          </div>
+
+          <!-- Scatter plot: Temperature and poverty -->
+          <div class="mb-5">
+            <iframe title="The relationship between summer temperature and poverty in Baltimore" aria-label="Scatter Plot" id="datawrapper-chart-20PUA" src="https://datawrapper.dwcdn.net/20PUA/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="427" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+          </div>
+
+          <!-- Bar chart: Heat-related deaths -->
+          <div class="mb-5">
+            <iframe title="Baltimore has more than its share of heat-related deaths in Maryland" aria-label="Grouped Bars" id="datawrapper-chart-UGAzR" src="https://datawrapper.dwcdn.net/UGAzR/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="488" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+          </div>
+
+          <!-- Line chart: Heat index -->
+          <div class="mb-5">
+            <iframe title="Indoor and outdoor heat index during Baltimore heat wave, July 16-22, 2019" aria-label="Line chart" id="datawrapper-chart-dNfMr" src="https://datawrapper.dwcdn.net/dNfMr/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="455" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
