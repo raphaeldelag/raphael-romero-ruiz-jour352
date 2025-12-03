@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Data visualization project on ICE detention in Arizona">
+    <title>ICE Detention in Arizona: Data Analysis</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">The College Park Gazette</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Current Issue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Past Issues</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">ICE Detention in Arizona</h1>
+            <p class="lead">A data-driven look at immigration detention facilities across the state</p>
+            <p class="byline">By Raphael Romero Ruiz | December 3, 2025</p>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container mt-5">
+        
+        <!-- Introduction -->
+        <div class="row mb-5">
+            <div class="col-lg-8 offset-lg-2">
+                <p class="lead">Arizona houses thousands of immigrants in detention facilities across the state. These data visualizations reveal the distribution and scale of ICE detention operations in Arizona.</p>
+            </div>
+        </div>
+
+        <!-- Graphic 1: Map -->
+        <div class="row mb-5">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="graphic-container">
+                    <h2 class="graphic-headline">Eloy Detention Center holds the majority of Arizona's detained immigrant population</h2>
+                    <p class="graphic-chatter">The vast majority of people in ICE detention in Arizona are housed in a facility in central Arizona, with six detention centers across the state holding an average of more than 4,000 individuals daily.</p>
+                    
+                    <!-- Datawrapper Chart -->
+                    <div class="chart-container my-4">
+                        <iframe title="The vast majority of the people in ICE detention in Arizona are housed in a facility in central Arizona" aria-label="Symbol map" id="datawrapper-chart-PqbA9" src="https://datawrapper.dwcdn.net/PqbA9/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="714" data-external="1"></iframe>
+                        <script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                    </div>
+                    
+                    <p class="graphic-source"><strong>Source:</strong> Syracuse University's Transactional Records Access Clearinghouse (TRAC), ICE facility data as of June 23, 2025</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Graphic 2: Bar Chart -->
+        <div class="row mb-5">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="graphic-container">
+                    <h2 class="graphic-headline">La Paz County holds the highest average daily population of ICE detainees in Arizona</h2>
+                    <p class="graphic-chatter">While Eloy Detention Center holds roughly one-third of Arizona's detained immigrant population, the La Paz County Adult Detention Facility near the California border has the highest average daily population in the state.</p>
+                    
+                    <!-- Datawrapper Chart -->
+                    <div class="chart-container my-4">
+                        <iframe title="Average daily populations in ICE detention across Arizona's five facilities" aria-label="Bar Chart" id="datawrapper-chart-CMDx6" src="https://datawrapper.dwcdn.net/CMDx6/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="284" data-external="1"></iframe>
+                        <script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+                    </div>
+                    
+                    <p class="graphic-source"><strong>Source:</strong> Syracuse University's Transactional Records Access Clearinghouse (TRAC), ICE facility data as of June 23, 2025</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Analysis Section -->
+        <div class="row mb-5">
+            <div class="col-lg-8 offset-lg-2">
+                <h3>Key Findings</h3>
+                <ul>
+                    <li>As of June 23, 2025, Arizona's six immigration detention centers housed an average of 4,089 individuals daily</li>
+                    <li>The Eloy Detention Center holds approximately 1,380 people per day, making it the second-highest capacity facility in the state</li>
+                    <li>La Paz County Adult Detention Facility has the highest average daily population among Arizona detention centers</li>
+                    <li>These facilities operate under ICE contracts to house immigrants during civil immigration proceedings</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-light text-dark text-center py-4 mt-5 border-top">
+        <div class="container">
+            <p>&copy; 2025 The College Park Gazette. All rights reserved.</p>
+            <p>Contact: <a href="mailto:rromeror@umd.edu">rromeror@umd.edu</a></p>
+        </div>
+    </footer>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
