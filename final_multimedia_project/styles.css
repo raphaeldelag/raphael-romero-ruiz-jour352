@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'nyt-franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.7;
   color: #333;
   background-color: #ffffff;
@@ -28,7 +28,7 @@ body {
 }
 
 .navbar-brand {
-  font-family: 'nyt-cheltenham', Georgia, serif;
+  font-family: 'Merriweather', Georgia, serif;
   font-weight: 700;
   font-size: 1.75rem;
   letter-spacing: 0;
@@ -52,7 +52,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-  font-family: 'nyt-franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -80,41 +80,34 @@ body {
 .hero-image {
     position: relative;
     height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
     overflow: hidden;
-    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero-image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: 1;
+.hero-image video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-/* Dark gradient overlay - stronger at bottom */
-
 
 /* Article Header - Overlaid on Hero */
 .article-header {
-  position: relative;
-  z-index: 3;
-  max-width: 945px;
-  margin: 0 auto;
-  padding: 0 20px 80px;
-  text-align: center;
-  color: white;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 2rem;
+    background: transparent;
+    border-radius: 10px;
+    animation: fadeInUp 1.5s ease-out;
 }
 
 .article-header h1 {
-    font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+    font-family: 'Merriweather', georgia, 'times new roman', times, serif;
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.1;
@@ -123,24 +116,38 @@ body {
     text-shadow: 0 1px 8px rgba(0,0,0,0.5);
     margin-left: auto;
     margin-right: auto;
+    animation: fadeInUp 1.5s ease-out 0.3s backwards;
 }
 
 .article-header .byline {
-  font-family: 'nyt-franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 0.8125rem;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
   color: rgba(255,255,255,0.95);
   margin-bottom: 0.25rem;
   text-transform: none;
   letter-spacing: 0;
   font-weight: 400;
+  animation: fadeInUp 1.5s ease-out 0.6s backwards;
 }
 
 .article-header .publish-date {
-  font-family: 'nyt-franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 0.8125rem;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
   color: rgba(255,255,255,0.75);
   margin-bottom: 0;
   font-weight: 400;
+  animation: fadeInUp 1.5s ease-out 0.9s backwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Main Container - Narrow, Centered */
@@ -153,10 +160,11 @@ body {
 /* Chapter Sections */
 .chapter {
   margin-bottom: 2rem;
+  animation: fadeIn 1s ease-out;
 }
 
 .chapter h2 {
-  font-family: 'nyt-cheltenham', Georgia, serif;
+  font-family: 'Merriweather', Georgia, serif;
   font-size: 2rem;
   font-weight: 700;
   margin-top: 2.5rem;
@@ -168,7 +176,7 @@ body {
 
 /* Article Body */
 .chapter p {
-  font-family: 'nyt-imperial', Georgia, 'Times New Roman', serif;
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
   font-size: 1.25rem;
   line-height: 1.75;
   margin-bottom: 1.25rem;
@@ -180,6 +188,13 @@ body {
 figure {
   margin: 2.5rem 0;
   padding: 0;
+  animation: scaleIn 0.8s ease-out;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 figure img {
@@ -189,25 +204,84 @@ figure img {
 }
 
 .figure-caption {
-  font-family: 'nyt-franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
   color: #666;
   margin-top: 0.625rem;
+  padding: 0 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Inline figure - contained within body width */
+.figure-inline {
+  width: 100%;
+  max-width: 800px;
+  margin: 2.5rem auto;
+  position: static;
+  left: auto;
+  right: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figure-inline img {
+  width: 100%;
+}
+
+.figure-inline .figure-caption {
   padding: 0;
 }
 
-/* Pull Quote */
-.pull-quote {
-  font-family: 'nyt-imperial', Georgia, serif;
-  font-size: 1.75rem;
-  font-style: italic;
-  line-height: 1.4;
-  border-left: 2px solid #121212;
-  padding-left: 1.25rem;
-  margin: 2rem 0;
-  color: #121212;
-  font-weight: 300;
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Pull Quotes */
+.pullquote {
+    margin: 2.5rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid #333;
+    background-color: #f8f8f8;
+    font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+}
+
+.pullquote p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-style: italic;
+    margin: 0;
+    color: #333;
+    font-weight: 500;
+}
+
+.pullquote cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-style: normal;
+    color: #666;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Responsive pull quotes */
+@media (max-width: 768px) {
+    .pullquote {
+        padding: 1rem 1.5rem;
+    }
+    
+    .pullquote p {
+        font-size: 1.25rem;
+    }
 }
 
 /* Footer - Minimal */
@@ -219,7 +293,7 @@ footer {
 }
 
 footer p {
-  font-family: 'nyt-franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.875rem;
   color: #666;
   margin: 0.5rem 0;
@@ -234,49 +308,32 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .hero-image {
-    min-height: 100vh;
-  }
-  
-  .article-header {
-    padding: 0 20px 60px;
-  }
-  
-  .article-header h1 {
-    font-size: 2.5rem;
-    line-height: 1.1;
-  }
-  
-  .chapter h2 {
-    font-size: 1.625rem;
-  }
-  
-  .chapter p {
-    font-size: 1.125rem;
-  }
-  
-  figure {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
-  
-  .figure-caption {
-    padding: 0 20px;
-  }
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
-@media (min-width: 769px) {
-  figure {
-    margin-left: calc((100vw - 600px) / -2);
-    margin-right: calc((100vw - 600px) / -2);
-    max-width: 100vw;
-  }
-  
-  .figure-caption {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+/* Chart animations */
+.chart-container {
+    animation: slideInFromBottom 1s ease-out;
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
